@@ -17,10 +17,10 @@ while ejecutando:
         print("Opcion no valida, por favor, ingrese un numero valido entre 1 y 5")
         continue
 #opcion 1 Bicis disponibles
-    if opcion == 1:
+if opcion == 1:
         print(f"\n [INFO] Cantidad de bicicletas disponibles: {bicis_disponibles}")
 #opcion 2 Arrendar bicicletas
-    elif opcion == 2:
+elif opcion == 2:
         print(f"\n--- Arrendar bicicletas (Disponibles): {bicis_disponibles} ")
         if bicis_disponibles == 0:
             print ("Lo sentimos, no quedan bicicletas disponibles")
@@ -38,7 +38,7 @@ while ejecutando:
             except ValueError:
                 print("Error, Debe ingresar un numero entero")
 #opcion 3 
-    elif opcion == 3:
+elif opcion == 3:
         diferencia = capacidad_maxima-bicis_disponibles
         print(f"\n--- DEVOLCER BICICLETAS (espacio libre en estacion: {diferencia})---")
         try:
@@ -53,4 +53,6 @@ while ejecutando:
                 print(f"Devolucion exitosa ha regresado {cantidad_a_devolver} bicicletas")
         except ValueError:
             print("Error: Debe ingresar un numero entero valido")
-
+#Opcion 4 Viajes activos
+elif opcion == 4:
+        print(f"\n [HISTORIAL] actualmente hay {viajes_activos} bicicleta(s) en uso por ususarios")
