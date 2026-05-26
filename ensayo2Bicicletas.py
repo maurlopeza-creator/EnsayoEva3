@@ -19,7 +19,7 @@ while ejecutando:
 #opcion 1 Bicis disponibles
 if opcion == 1:
         print(f"\n [INFO] Cantidad de bicicletas disponibles: {bicis_disponibles}")
-#opcion 2 Arrendar bicicletas
+#opcion 2 Arrendar bicicletas1
 elif opcion == 2:
         print(f"\n--- Arrendar bicicletas (Disponibles): {bicis_disponibles} ")
         if bicis_disponibles == 0:
@@ -56,3 +56,9 @@ elif opcion == 3:
 #Opcion 4 Viajes activos
 elif opcion == 4:
         print(f"\n [HISTORIAL] actualmente hay {viajes_activos} bicicleta(s) en uso por ususarios")
+#opcion 5 Salir
+elif opcion == 5:
+     print("GRacias por utilizar nuestro software, hasta la proxima")
+     ejecutando = False
+else:
+    print ("Opcion fuera de rango")
